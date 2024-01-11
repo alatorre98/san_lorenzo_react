@@ -1,0 +1,83 @@
+.navbarContainer {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+}
+
+.navbar {
+    background: #e95624;
+    line-height: 30px;
+    --r: .8em; /* control the ribbon shape */
+    padding-inline: calc(var(--r) + .3em);
+    clip-path: polygon(0 0,100% 0,calc(100% - var(--r)) 50%,100% 100%,0 100%, var(--r) 50%);
+    width: 600px;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 100px;
+    list-style: none;
+    height: 45px;
+}
+
+.navbar li {
+    font-size: 25px;
+    margin: 0;
+    position: relative;
+}
+
+.navbar li:after {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    content: "";
+    display: block;
+    height: 2px;
+    left: 50%;
+    position: absolute;
+    background: #f0c226;
+    transition: width 0.3s ease 0s, left 0.3s ease 0s;
+    width: 0;
+}
+
+.navbar li:hover:after {
+    width: 100%; 
+    left: 0;  
+}
+
+
+.navlink {
+    color: #ffffff;
+    transition: color linear 0.3s;
+    text-decoration: none;
+}
+
+.navlink:hover {
+    color: #f0c226;
+}
+
+.activeNavLink {
+    color: #f0c226;
+    text-decoration: none;
+}
+
+
+/* HTML: <div class="ribbon">Your text content</div> */
+.ribbon {
+    font-size: 28px;
+    font-weight: bold;
+    color: #fff;
+  }
+.ribbon {
+    --r: .8em; /* control the ribbon shape */
+    
+    padding-inline: calc(var(--r) + .3em);
+    line-height: 1.8;
+    clip-path: polygon(0 0,100% 0,calc(100% - var(--r)) 50%,100% 100%,0 100%, var(--r) 50%);
+    background: #CC333F; /* the main color */
+    width: fit-content;
+  }

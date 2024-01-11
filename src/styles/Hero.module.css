@@ -1,0 +1,15 @@
+.heroContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(https://res.cloudinary.com/dbikme1sf/image/upload/f_auto,q_auto/v1/san-lorenzo/ujbhfyeeu27t1nv7fzha);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 800px;
+    width: 100%;
+}
+
+.heroTitle {
+    color: #FFF;
+}
